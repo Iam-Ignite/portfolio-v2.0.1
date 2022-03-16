@@ -1,0 +1,167 @@
+.navbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 97%;
+  height: 10vh;
+  /* border: 1px solid #f7f7f7; */
+  background-color: rgba(0, 84, 148, 0.06);
+  border-radius: 2px;
+  margin: auto;
+  margin-top: 35px;
+  box-shadow: -1px 1px 5px #21212134;
+}
+.navbar.dark {
+  background-color: #262626;
+}
+
+.nav-item {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: hsl(216, 15%, 52%);
+  font-family: "Roboto", sans-serif;
+}
+.logo-text {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+}
+
+.nav-item a {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 19px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.dark a {
+  color: #dfe6fc;
+}
+.nav-item a:hover {
+  padding-bottom: 3px;
+  color: rgb(12, 83, 216);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.switch .input-field {
+  display: none;
+}
+
+.slider-btn22 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #ff7c6b, #fed54c);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider-btn22:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.input-field:checked + .slider-btn22 {
+  background: linear-gradient(45deg, #bbbbbb, #40403e);
+}
+
+.input-field:focus + .slider-btn22 {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.input-field:checked + .slider-btn22:before {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(21px);
+}
+
+/*------ ADDED CSS ---------*/
+.slider-btn22:after {
+  content: "🌞";
+  color: white;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 71%;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+.menu,
+.close {
+  display: none;
+}
+.input-field:checked + .slider-btn22:after {
+  content: "🌚";
+  left: 31%;
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    line-height: 3;
+    background: #fff;
+    height: 100%;
+    width: 0;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  .sidebar.dark {
+    background-color: #262626;
+  }
+  .menu {
+    font-size: 40px;
+    padding: 1rem;
+    color: hsl(216, 15%, 52%);
+  }
+  .close {
+    margin-left: auto;
+    padding: 40px 50px;
+    font-size: 31px;
+    color: hsl(216, 15%, 52%);
+  }
+  .navbar {
+    padding: 0.1rem;
+  }
+  .close,
+  .menu {
+    display: block;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .home-page {
+    flex-direction: column;
+  }
+}
