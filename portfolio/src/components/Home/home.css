@@ -1,0 +1,136 @@
+.home-section {
+  background-color: #fff;
+  padding-bottom: 4rem;
+  margin-top: 30px;
+}
+.home-section.dark {
+  background-color: #212121;
+}
+.home-main {
+  position: relative;
+}
+b {
+  font-family: "Roboto", sans-serif !important;
+}
+.home-page {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 84, 148, 0.06);
+  padding: 3rem 0;
+  box-shadow: -1px 1px 5px #80808078;
+  width: 98%;
+  margin: auto;
+  padding: 20px 0 49px 0;
+}
+
+.home-page h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgb(54, 53, 53);
+  font-family: "Akaya Telivigala", cursive;
+}
+h1.dark {
+  color: #ccd6f6;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: rgb(87, 85, 85);
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(87, 85, 85);
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+h4.dark {
+  color: #ccd6f6;
+}
+h2.dark {
+  color: #ccd6f6;
+}
+p.dark {
+  color: #ccd6f6;
+}
+.home-page h1 span {
+  color: rgb(12, 83, 216);
+}
+.home-page b {
+  color: rgb(119, 119, 119);
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: "Akaya Telivigala", cursive;
+}
+.img-profile {
+  height: 80%;
+}
+.btn-cv:hover {
+  background: #0b53d8;
+  color: #fff;
+}
+.btn-cvs:hover {
+  background: 0;
+  border: 2px solid #0b53d8;
+  color: #0b53d8;
+}
+.btn-cv {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #0b53d8;
+  background: 0;
+  color: #0b53d8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-cvs {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #0b53d8;
+  background: #0b53d8;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.bg-home {
+  position: absolute;
+  height: 100%;
+  width: 98%;
+  opacity: 0.4;
+  left: 1%;
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+  .home-page h1 {
+    font-size: 2.3rem;
+  }
+  .home-page b {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-content {
+    padding: 4rem 39px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .home-content {
+    padding: 4rem 39px;
+  }
+  .bg-img {
+    display: none;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 820px) {
+  .home-content {
+    padding: 4rem .4rem;
+  }
+}
